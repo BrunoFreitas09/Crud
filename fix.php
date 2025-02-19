@@ -12,9 +12,9 @@
         $_Nome = $_GET["name"] ?: "Nome inválido";
         $_Number = $_GET["number"] ?: "Número inválido";
 
-        echo ("Seu nome é: $_Nome e seu número é $_Number")
+        echo ("Seu nome é: $_Nome e seu número é $_Number");
 
-        include("conexao.php");
+        include("conexao.php")
 ?>
 </section>
 </body>
