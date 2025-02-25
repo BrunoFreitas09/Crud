@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Coins Conversation</title>
+    <title>Crud</title>
 </head>
+
 <body>
-<section>
-    <form action="fix.php" method="get">
-       
-       <h1> <strong> Mini-Cadastro </strong></h1>
-    
-      <h2>  <label for="num"> Nome  </label></H2>
-        <input type="string" name="name" id="idName">
-        <h2>  <label for="num"> Telefone  </label></H2>
-            <input type="float" name="number" id="idNumber">
+    <section>
+        <form action="cadastro.php" method="POST">
 
-        <input type="submit" value="Enviar dados">
+            <h1> <strong> Mini-Cadastro </strong></h1>
 
-        
-    </form>
-</section>
+            <h2> <label for="num"> Nome: </label></H2>
+            <input type="string" name="nometeste" id="idName">
+
+            <h2> <label for="num"> Telefone: </label></H2>
+            <input type="float" name="numeroteste" id="idNumber">
+                <button>Cadastrar</button>
+        </form>
+        <a href="table.php"><button action="table.php">Lista de cadastro 📑</button></a>
+    </section>
 
 </body>
+
 </html>
