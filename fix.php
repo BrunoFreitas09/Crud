@@ -15,4 +15,9 @@
             }
 
            mysqli_close($conexao);
+
+        //Tentando listar o banco na tabela:
+    
+        
+    ?>       
 ?>

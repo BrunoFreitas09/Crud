@@ -1,3 +1,11 @@
+<?php
+  include ("conexao.php");
+  $sql = "SELECT * FROM usuarios ORDER  BY id DESC";
+  $result = $conexao->query($sql); 
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,20 +29,25 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>teste1</td>
+      <td><?php
+            while ($user_data = mysqli_fetch_assoc($result)){
+              echo "<tr>";
+              echo "<tr>".user_data['id']."</td>";
+            }
+          ?>
       <td>teste2</td>
 
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
+      <td>Mais Teste</td>
+      <td>Mais teste</td>
 
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
+      <td>maais testes</td>
+      <td>maais testes</td>
  
     </tr>
   </tbody>
